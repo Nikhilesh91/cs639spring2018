@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlOuter"
+    android:orientation="vertical">
+
+
+<ListView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lstView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none">
+
+</ListView>
+
+
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/fourthLayer"
+    android:layout_below="@+id/lstView"
+android:layout_gravity="bottom|center"
+android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddLayer"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtText"
+        android:text="This is some temprory text"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnAddFact"
+            android:text="Add Fact"
+            android:background="#F00"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lstAddFact"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal">
+
+
+<Button
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/btnRed"
+    android:background="#F00"
+    android:layout_gravity="bottom|center"/>
+
+
+<Button
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/btnBlue"
+    android:background="#00F"
+    android:focusable="false"
+    android:layout_gravity="bottom|center"/>
+<Button
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/btnYellow"
+    android:background="#FF0"
+    android:layout_gravity="bottom|center"/>
+<Button
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/btnGreen"
+    android:background="#008000"
+    android:layout_gravity="bottom|center"/>
+<Button
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/btnOrange"
+    android:background="#FFA500"
+    android:layout_gravity="bottom|center"/>
+
+
+
+
+
+</LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
